@@ -1,0 +1,23 @@
+.Button {
+    display: inline-block;
+    padding: 6px 12px;
+    margin: 0 4px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: var(--coder-button);
+    font-size: 14px;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    user-select: none;
+    padding: 5px 25px 5px 25px;
+}
+
+.Button::selection {
+    background-color: var(--formal-gray);
+    color: #fff;
+}
