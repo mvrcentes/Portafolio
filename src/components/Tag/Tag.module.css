@@ -1,0 +1,49 @@
+.Type__1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.Type__2 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.Type__3 {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 15px;
+    width: fit-content;
+}
+
+.Margin {
+    margin-left: 15px;
+}
+
+.Tag  {
+    font-family: 'M PLUS Code Latin';
+    letter-spacing: 2px;
+    color: var(--coder-sintaxis);
+}
+
+.Tag__3 {
+    display: flex;
+    align-self: flex-end;
+}
+
+.Children {
+    font-family: 'M PLUS Code Latin';
+    letter-spacing: 1px;
+    color: var(--formal-main-color);   
+}
+
+.Code {
+    font-family: 'Press Start 2P';
+    letter-spacing: 1px;
+    font-size: 50px;
+}
+
+.Children__yellow {
+    color: var(--coder-tag);
+}
