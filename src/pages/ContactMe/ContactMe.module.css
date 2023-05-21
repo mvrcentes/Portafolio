@@ -1,0 +1,20 @@
+.Topbar {
+    position: relative;
+    bottom: 0;
+    background-color: var(--coder-sintaxis);
+    height: .15rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.Sidebar {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 15vw;
+    background-color: var(--coder-sintaxis);
+    width: .15rem;
+    height: 100%;
+}
+
