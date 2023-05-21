@@ -1,0 +1,59 @@
+.Welcome {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 10px;
+    padding: 25px;
+}
+
+.About_me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.aboutMe_p {
+    width: 100px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 150px;
+}
+
+.Guatemala {
+    height: 300px;
+    width: 300px;
+}
+
+.Connect_with_me {
+    height: 500px;
+}
+
+.Terminal__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    position: relative;
+}
+
+.Terminal__container::before, .Terminal__container::after {
+    content: "";
+    background-color: #fab5704c;
+    background-image: url("../../assets/kali.png");
+    position: absolute;
+}
+
+.Terminal__container::before {
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    top: 39%;
+    right: 38%;
+}
+
