@@ -1,0 +1,65 @@
+.Line__text {
+    margin-left: 2rem;
+    flex: 1;
+}
+
+.Number { 
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: calc(15vw - 1.5rem);
+    margin-right: 1rem;
+    opacity: 50%;
+}
+
+.Contact {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.const {
+    color: #c44cea;
+}
+
+.function {
+    color: var(--coder-button);
+}
+
+.equal {
+    color: #0cb1f2;
+}
+
+.sintaxis {
+    color: var(--coder-tag);
+}
+
+.this {
+    color: #f403a4;
+}
+
+.word {
+    color: #00e8c6;
+}
+
+.margin {
+    margin-left: 60px;
+}
+
+.margin2 {
+    margin-left: 90px;
+}
+
+.input {
+    width: 0px;
+    font-family: monospace;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: aqua;
+}
+
+.input:focus {
+    outline: none;
+    min-width: 5px;
+}
