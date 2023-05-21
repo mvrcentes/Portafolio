@@ -1,0 +1,6 @@
+.Codeline {
+    display: flex;
+    flex-direction: row;
+    color: var(--coder-sintaxis);
+    font-size: 1.2rem;
+}
