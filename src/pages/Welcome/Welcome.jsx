@@ -5,12 +5,16 @@ import "./Welcome.css"
 import { Menu } from "../../components/Menu/Menu"
 import { Tag } from "../../components/Tag/Tag"
 import { Terminal } from "../../components/Terminal/Terminal"
+
+import me from "../../assets/yo.png"
 import guatemala from "../../assets/guatemala.png"
 export const Welcome = () => {
     return (
-        <>
+        <div className="Welcome_page">
             <Menu />
             <div className="Welcome">
+                <div className="Title">
+
                 <Tag tag="p" type={1} color="yellow">
                     So... this is me
                 </Tag>
@@ -18,6 +22,8 @@ export const Welcome = () => {
                 <Tag tag="h1" type={2} color="">
                     Marco Ramirez
                 </Tag>
+                </div>
+                <img className="me" src={me} alt="" />
             </div>
 
             <div className="About_me">
@@ -26,25 +32,15 @@ export const Welcome = () => {
                 </Tag>
 
                 <div className="row">
-                    <div className="Guatemala">
-                        <span> :^:::^^^^^^^^^^^^^^^^^^^^^^^~^~~~~!!: </span>
-                        <span> ?55PYYPGGGGGGGGGGGGGGGGGG5555555555P7 </span>
-                        <span> JP5P5PPGGGGGGGGGGGGGGGGGP5P5PP5P55PP! </span>
-                        <span> JGPPPPPGGGGGGGGGGGGGGGGGPPPPPPPPPPPG! </span>
-                        <span> JGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG! </span>
-                        <span> JGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG~ </span>
-                        <span>
-                            {" "}
-                            :!??JJJJJ5GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG~{" "}
-                        </span>
+                    <img className="Guatemala" src={guatemala} alt="" />
+                    <div className="aboutMe_p">
+                        <Tag tag="p" type={2} color="yellow">
+                            I'm a student from Guatemala, currently attending my
+                            third year of major, working towards a degree in
+                            computer science. I thoroughly enjoy programming and
+                            everything related to it.
+                        </Tag>
                     </div>
-
-                    <Tag tag="p" type={1} color="yellow" className="aboutMe_p">
-                        I'm a student from Guatemala, currently attending my
-                        third year of major, working towards a degree in
-                        computer science. I thoroughly enjoy programming and
-                        everything related to it.
-                    </Tag>
                 </div>
             </div>
 
@@ -56,6 +52,6 @@ export const Welcome = () => {
                     <Terminal />
                 </div>
             </div>
-        </>
+        </div>
     )
 }
