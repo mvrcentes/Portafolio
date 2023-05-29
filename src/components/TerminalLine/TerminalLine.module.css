@@ -1,0 +1,21 @@
+.TerminalLine {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.blue {
+    color: #0cb1f2;
+}
+
+.red {
+    color: red;
+}
+
+.white {
+    color: #fff;
+}
+
+.green {
+    color: #28ca41;
+}   
