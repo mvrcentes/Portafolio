@@ -75,6 +75,7 @@ export const Terminal = () => {
                         </Link>
                     </div>
                 </div>
+
                 <div className="Terminal__Body__Line">
                     <div className="Terminal__Body__Line__Text">
                         
