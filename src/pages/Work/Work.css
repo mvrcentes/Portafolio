@@ -1,0 +1,46 @@
+.Title {
+    margin-top: 80px;
+    margin-left: 70px;
+}
+
+.Projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 200px;
+    margin-top: 100px;
+}
+
+.Project {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+
+.Project__Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 460px;
+    gap: 20px;
+}
+
+.imgs {
+    border-radius: 20px;
+    width: 700px;
+    height: 460px;
+    position: relative;
+}
+
+.imgs::before, .imgs::after {
+    z-index: -1;
+    content: "";
+    background-color: #fab5704c;
+    position: absolute;
+    top: 8%;
+    right: 4%;
+}
+
+.REPOSITORY {
+    width: 530px;
+}
