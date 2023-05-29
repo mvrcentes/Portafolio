@@ -1,3 +1,7 @@
+.menu {
+    padding: 25px;
+}
+
 .menu  [class~="active"] button{
     border: 1px solid var(--coder-button);
 }

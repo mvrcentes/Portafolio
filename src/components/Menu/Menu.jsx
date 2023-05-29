@@ -17,7 +17,7 @@ export const Menu = () => {
             </NavLink>
 
             <NavLink
-                to="/alo"
+                to="/skills"
                 className={({ isActive, isPending }) =>
                     isPending ? "pending" : isActive ? "active" : ""
                 }>
@@ -25,11 +25,11 @@ export const Menu = () => {
             </NavLink>
 
             <NavLink
-                to="/ol"
+                to="/work"
                 className={({ isActive, isPending }) =>
                     isPending ? "pending" : isActive ? "active" : ""
                 }>
-                <Button number="03" text="Certifications" />
+                <Button number="03" text="Work" />
             </NavLink>
 
             <NavLink
