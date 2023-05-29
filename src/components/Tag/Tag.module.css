@@ -47,3 +47,11 @@
 .Children__yellow {
     color: var(--coder-tag);
 }
+
+.m {
+    font-size: 30px;
+}
+
+.s {
+    font-size: 20px;
+}

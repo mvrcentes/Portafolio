@@ -2,7 +2,7 @@ import React from "react"
 
 import style from "./Tag.module.css"
 
-export const Tag = ({ tag, children, type  = "", color = "" }) => {
+export const Tag = ({ tag, children, type = "", color = "", size = "" }) => {
     const type_classes = type
         ? `${style.Type} ${style[`Type__${type}`]}`
         : `${style.Type} ${style.Gap}`
@@ -29,7 +29,7 @@ export const Tag = ({ tag, children, type  = "", color = "" }) => {
     return (
         <div className={type_classes}>
             <div className={style.Tag}>{`<${tag}>`}</div>
-            <div className={children_classes}>{children}</div>
+            <div className={`${children_classes} ${style[`${size}`]}`}>{children}</div>
             <div className={tag_classes}>{`</${tag}>`}</div>
         </div>
     )
