@@ -10,7 +10,7 @@ export const Terminal = () => {
         twitter: "",
         instagram: "https://www.instagram.com/mvrcentes.dmg/?hl=es",
         facebook: "",
-        tiktok: "",
+        tiktok: "https://www.tiktok.com/@mvrcentes",
     }
 
     const showLink = () => {
@@ -70,7 +70,15 @@ export const Terminal = () => {
                     <div className="Terminal__Body__Line__Text">
                         <Link style={{ "text-decoration": "none" }}>
                             <span className={style.blue}>
-                                &nbsp;14578&nbsp;&nbsp;ttys003&nbsp;&nbsp;<Link style={{ "text-decoration": "none" }} className={style.green} to={links.linkedin} target="_blank">linkedin</Link>
+                                &nbsp;14578&nbsp;&nbsp;ttys003&nbsp;&nbsp;
+                                <a
+                                    style={{ "text-decoration": "none" }}
+                                    href={links.linkedin}
+                                    className={style.green}
+                                    to={links.linkedin}
+                                    target="_blank">
+                                    linkedin
+                                </a>
                             </span>
                         </Link>
                     </div>
@@ -78,20 +86,30 @@ export const Terminal = () => {
 
                 <div className="Terminal__Body__Line">
                     <div className="Terminal__Body__Line__Text">
-                        
-                            <span className={style.blue}>
-                                &nbsp;15678&nbsp;&nbsp;ttys003&nbsp;&nbsp;<Link style={{ "text-decoration": "none" }} className={style.green}>instagram</Link>
-                            </span>
-                        
+                        <span className={style.blue}>
+                            &nbsp;15678&nbsp;&nbsp;ttys003&nbsp;&nbsp;
+                            <a
+                                style={{ "text-decoration": "none" }}
+                                href={links.instagram}
+                                className={style.green}
+                                target="_blank">
+                                instagram
+                            </a>
+                        </span>
                     </div>
                 </div>
                 <div className="Terminal__Body__Line">
                     <div className="Terminal__Body__Line__Text">
-                        
-                            <span className={style.blue}>
-                                &nbsp;78678&nbsp;&nbsp;ttys003&nbsp;&nbsp;<Link style={{ "text-decoration": "none" }} className={style.green}>tiktok</Link>
-                            </span>
-                        
+                        <span className={style.blue}>
+                            &nbsp;78678&nbsp;&nbsp;ttys003&nbsp;&nbsp;
+                            <Link
+                                style={{ "text-decoration": "none" }}
+                                href={links.tiktok}
+                                className={style.green}
+                                target="_blank">
+                                tiktok
+                            </Link>
+                        </span>
                     </div>
                 </div>
 
@@ -110,7 +128,7 @@ export const Terminal = () => {
                                     className={style.input}
                                     style={{
                                         width: `${
-                                            terminalinput?.length * 7 ?? 0
+                                            terminalinput?.length * 11 ?? 0
                                         }px`,
                                     }}
                                     value={terminalinput}
@@ -135,10 +153,15 @@ export const Terminal = () => {
                                 )-[
                                 <span className={style.white}>~</span>]
                             </span>
-                            <Link style={{"text-decoration": "none"}} className={style.blue}>
-                            <span className="Terminal__Body__Line__Text__Code">
-                                {showLink()}
-                            </span>
+                            <Link
+                                style={{ "text-decoration": "none" }}
+                                className={style.blue}>
+                                <span className="Terminal__Body__Line__Text__Code">
+                                    &nbsp;
+                                    <a href={showLink()} target="_blank">
+                                        {showLink()}
+                                    </a>
+                                </span>
                             </Link>
                         </div>
                     </div>

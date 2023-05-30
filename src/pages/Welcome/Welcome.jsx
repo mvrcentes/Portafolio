@@ -15,7 +15,7 @@ export const Welcome = () => {
             <div className="Welcome">
                 <div className="Title">
 
-                <Tag tag="p" type={1} color="yellow">
+                <Tag tag="p" type={1} color="yellow" size="s">
                     So... this is me
                 </Tag>
 
@@ -34,7 +34,7 @@ export const Welcome = () => {
                 <div className="row">
                     <img className="Guatemala" src={guatemala} alt="" />
                     <div className="aboutMe_p">
-                        <Tag tag="p" type={2} color="yellow">
+                        <Tag tag="p" type={2} color="yellow" size="s">
                             I'm a student from Guatemala, currently attending my
                             third year of major, working towards a degree in
                             computer science. I thoroughly enjoy programming and
